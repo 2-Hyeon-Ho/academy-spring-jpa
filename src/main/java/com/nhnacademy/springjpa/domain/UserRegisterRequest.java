@@ -11,4 +11,5 @@ public class UserRegisterRequest {
     @NotBlank
     String password;
 
+    int age;
 }

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 
 import javax.sql.DataSource;
 
+//서블릿 컨테이너가 올라올 때 초기화
 @Configuration
 @ComponentScan(basePackageClasses = Base.class,
         excludeFilters = @ComponentScan.Filter(Controller.class))

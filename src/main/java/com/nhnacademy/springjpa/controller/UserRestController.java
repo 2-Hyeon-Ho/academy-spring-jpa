@@ -36,6 +36,7 @@ public class UserRestController {
         return user;
     }
 
+    //modelAttribute : 메서드 레벨에서 사용할 때 get,post매핑이 되기 전에 select를 통해 user객체가 먼저 생성된다?
     @PutMapping
     public User modifyUser(@ModelAttribute("user") User user,
                            @Valid @RequestBody UserModifyRequest request,

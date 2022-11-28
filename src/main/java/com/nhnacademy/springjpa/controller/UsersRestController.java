@@ -31,7 +31,7 @@ public class UsersRestController {
             throw new ValidationFailedException(bindingResult);
         }
 
-        if (!userRepository.addUser(userRequest.getId(), userRequest.getPassword())) {
+        if (!userRepository.addUser(userRequest.getId(), userRequest.getPassword(), userRequest.getAge())) {
             throw new UserRegisterFailedException();
         }
 
